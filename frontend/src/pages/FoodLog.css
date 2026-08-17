@@ -1,0 +1,153 @@
+/* FoodLog.css */
+.food-log-container {
+  width: 100%;
+  animation: fadeIn 0.25s ease-out both;
+}
+
+.food-log-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.date-total {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.date-picker-wrap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  color: var(--text-secondary);
+}
+.date-picker-wrap input[type='date'] {
+  border: none;
+  padding: 0;
+  background: transparent;
+  font-size: 13px;
+  color: var(--text);
+  box-shadow: none;
+  width: auto;
+}
+.date-picker-wrap input:focus { box-shadow: none; border-color: transparent; }
+.date-icon { font-size: 14px; }
+
+.daily-total {
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: var(--radius);
+}
+.daily-total strong { color: var(--navy); }
+
+/* Two-column layout */
+.log-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.log-form-col { }
+.log-list-col { }
+
+/* Selected food preview */
+.selected-food-box {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  margin-top: 12px;
+}
+.sf-name { font-size: 14px; font-weight: 600; color: var(--text); }
+.sf-nepali { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.sf-macros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.sf-macros span {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-preview {
+  font-size: 12px;
+  color: var(--navy);
+  font-weight: 600;
+  background: rgba(30,58,95,0.06);
+  border: 1px solid rgba(30,58,95,0.12);
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.add-meal-form { }
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+/* Meal groups */
+.meal-group {
+  margin-bottom: 16px;
+}
+.meal-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--border-light);
+}
+.meal-group-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+.meal-group-cal {
+  font-size: 12px;
+  color: var(--navy);
+  font-weight: 600;
+  background: rgba(30,58,95,0.07);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.empty-log {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .log-grid { grid-template-columns: 1fr; }
+}

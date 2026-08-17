@@ -1,0 +1,59 @@
+# ──────────────────────────────────────────────────
+# NutriAI — .gitignore
+# ──────────────────────────────────────────────────
+
+# ── SECRETS — never commit these ──────────────────
+backend/.env
+*.env
+.env.*
+!.env.example
+
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environment ───────────────────────────
+backend/venv/
+venv/
+env/
+.venv/
+
+# ── Django ────────────────────────────────────────
+backend/db.sqlite3
+backend/django.log
+*.log
+
+# ── ML models (large binary files) ───────────────
+# Commit train.py but not the trained .pkl files.
+# Teammates regenerate models with: python recommendations/ml/train.py
+backend/recommendations/ml/model.pkl
+backend/recommendations/ml/rf_model.pkl
+backend/recommendations/ml/__pycache__/
+
+# ── Setup/scratch scripts ─────────────────────────
+backend/setup_part1.py
+backend/setup_part2.py
+backend/setup_part3.py
+backend/verify_all.py
+
+# ── Node / frontend ───────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ── OS / editor ───────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

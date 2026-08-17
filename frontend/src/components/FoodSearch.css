@@ -1,0 +1,79 @@
+/* FoodSearch.css */
+.food-search-container {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: var(--text-muted);
+  font-size: 15px;
+  pointer-events: none;
+}
+.search-input {
+  padding-left: 34px !important;
+  padding-right: 34px !important;
+}
+.clear-icon {
+  position: absolute;
+  right: 10px;
+  color: var(--text-muted);
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.clear-icon:hover { color: var(--text); }
+
+/* Dropdown */
+.search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 50;
+  padding: 4px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.search-result-item:hover { background: var(--surface-2); }
+
+.food-info { flex: 1; min-width: 0; }
+.food-name { font-size: 13.5px; font-weight: 500; color: var(--text); }
+.food-name-nepali { font-size: 11.5px; color: var(--text-muted); }
+
+.food-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.food-calories { font-size: 13px; font-weight: 600; color: var(--navy); }
+.food-category {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+.search-loading {
+  padding: 10px 12px;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}

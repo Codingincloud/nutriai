@@ -1,0 +1,17 @@
+/* Progress.css */
+.progress-container {
+  width: 100%;
+  animation: fadeIn 0.25s ease-out both;
+}
+
+.progress-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .progress-grid { grid-template-columns: 1fr; }
+  .progress-stats { grid-template-columns: 1fr 1fr; }
+}
