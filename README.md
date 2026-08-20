@@ -1,19 +1,6 @@
 # NutriAI — AI-Powered Personalized Nutrition Recommendation System
 
-**7th Semester Undergraduate Project**  
-Khwopa Engineering College, Libali-08, Bhaktapur  
-Purbanchal University · Computer Engineering · 2026
 
----
-
-## Team
-
-| Name | Roll No. | Responsibility |
-|------|----------|----------------|
-| Dristi Shrestha | 790313 | Backend & ML |
-| Prashant Ghimire | 790328 | Frontend & API |
-| Romina Koju | 790332 | Dataset & Testing |
-| Shrijan Sainju | 790342 | ML & Evaluation |
 
 ---
 
